@@ -493,7 +493,8 @@ template {
     padding-bottom: 30px;
   }
   .navbar__search {
-    margin-left: auto;
+    margin-right: auto;
+    margin-left: 48px;
   }
   .navbar-menu {
     padding: 22px 0;
@@ -550,6 +551,12 @@ template {
   }
   .logo {
     width: 99px;
+  }
+}
+
+@media (max-width: 480px) and (min-width: 320px) {
+  .container {
+    width: 85%;
   }
 }
 /*# sourceMappingURL=style.css.map */
