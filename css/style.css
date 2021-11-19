@@ -582,10 +582,19 @@ template {
   max-width: 69px;
   min-height: 45px;
   background-color: #EC1F46;
-  padding: 3px 7px;
+  padding: 7px 7px;
   border-radius: 4px;
   text-align: center;
   color: #ffffff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
 }
 
 .rating__text {
