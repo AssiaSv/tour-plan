@@ -412,6 +412,7 @@ template {
   text-transform: uppercase;
   font-size: 14px;
   line-height: 18px;
+  font-weight: 700;
 }
 
 .logo {
@@ -471,6 +472,7 @@ template {
 .user__name {
   font-size: 14px;
   line-height: 18px;
+  font-weight: 400;
   color: #333333;
   margin-left: 18px;
 }
@@ -483,7 +485,11 @@ template {
 
 @media (max-width: 992px) {
   .container {
-    max-width: 760px;
+    max-width: 91%;
+  }
+  .container__menu-bottom {
+    max-width: 87%;
+    margin: auto;
   }
   .logo {
     width: 132px;
