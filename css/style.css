@@ -575,10 +575,10 @@ template {
 }
 
 .rating {
-  max-width: 65px;
+  max-width: 69px;
   min-height: 45px;
   background-color: #EC1F46;
-  padding: 9px 6px;
+  padding: 9px 7px;
   border-radius: 4px;
   text-align: center;
   color: #ffffff;
