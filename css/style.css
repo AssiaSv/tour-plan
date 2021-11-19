@@ -554,6 +554,10 @@ template {
           align-items: center;
 }
 
+.hotel-wrapper__star {
+  margin-right: -3px;
+}
+
 .hotel-description {
   font-size: 12px;
   line-height: 15px;
@@ -578,7 +582,7 @@ template {
   max-width: 69px;
   min-height: 45px;
   background-color: #EC1F46;
-  padding: 9px 7px;
+  padding: 3px 7px;
   border-radius: 4px;
   text-align: center;
   color: #ffffff;
@@ -674,6 +678,7 @@ template {
   .stars {
     -ms-flex-preferred-size: auto;
         flex-basis: auto;
+    margin-right: 13px;
   }
   .hotel {
     padding-top: 5px;
