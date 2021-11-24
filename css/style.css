@@ -993,5 +993,17 @@ template {
   .slider {
     height: 180px;
   }
+  .slider-button {
+    height: 12px;
+    width: 12px;
+  }
+  .slider-button--next {
+    right: 6px;
+    background-image: url(../img/arrow-next-mini.svg);
+  }
+  .slider-button--prev {
+    left: 6px;
+    background-image: url(../img/arrow-prev-mini.svg);
+  }
 }
 /*# sourceMappingURL=style.css.map */
