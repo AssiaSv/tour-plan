@@ -802,6 +802,16 @@ template {
   margin-left: 8px;
 }
 
+.map {
+  width: 347px;
+  height: 213px;
+  border-radius: 10px;
+}
+
+.map__ggl {
+  border-radius: 10px;
+}
+
 @media (max-width: 1200px) {
   .container {
     max-width: 960px;
