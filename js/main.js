@@ -14,4 +14,5 @@ var mySwiper = new Swiper('.swiper', {
     enabled: true,
     onlyInViewport: false,
   },
+  
 });
