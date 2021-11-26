@@ -1260,6 +1260,9 @@ template {
   .newsletter {
     padding: 76px 0 83px 0;
   }
+  .newsletter-wrapper {
+    max-width: 479px;
+  }
   .newsletter__title {
     margin-bottom: 37px;
     margin-top: 0;
@@ -1317,6 +1320,9 @@ template {
   .hotel-button--prev {
     left: 6px;
     background-image: url(../img/arrow-prev-mini.svg);
+  }
+  .newsletter-wrapper {
+    width: 85%;
   }
 }
 /*# sourceMappingURL=style.css.map */
