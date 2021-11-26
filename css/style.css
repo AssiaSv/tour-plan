@@ -1266,6 +1266,9 @@ template {
   .subscribe {
     width: 100%;
   }
+  .reviews {
+    padding-bottom: 50px;
+  }
   .reviews__title {
     font-size: 18px;
     line-height: 23px;
