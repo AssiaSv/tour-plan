@@ -34,3 +34,9 @@ var reviewsSlider = new Swiper('.reviews-slider', {
   },
   
 });
+// Эффект паралакса
+$(".newslatter").parallax({
+  imageSrc: "img/newsletter-bg.jpg",
+  speed: 0.4,
+});
+

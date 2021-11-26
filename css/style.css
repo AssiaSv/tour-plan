@@ -826,7 +826,7 @@ template {
   background-size: cover;
 }
 
-.newsletter:before {
+.newsletter::before {
   content: '';
   position: absolute;
   top: 0;
@@ -900,6 +900,7 @@ template {
   border: none;
   color: #ffffff;
   background-color: #EC1F46;
+  cursor: pointer;
 }
 
 .reviews {
@@ -1273,6 +1274,9 @@ template {
     font-size: 18px;
     line-height: 23px;
     margin-bottom: 42px;
+  }
+  .reviews-slider__text {
+    text-align: left;
   }
   .reviews-slider__item {
     width: 100%;
