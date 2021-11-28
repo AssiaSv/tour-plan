@@ -24,6 +24,28 @@
   overflow: hidden
   grid-column-start: 1
   grid-column-end: span 2
+  &__place
+    margin-bottom: 11px
+  &__guests
+    margin-bottom: 11px
+  &__icon
+    margin-right: 14px
+  &__old-price
+    font-style: normal
+    font-weight: 400
+    font-size: 14px
+    line-height: 18px
+    text-decoration: line-through
+
+  &__new-price
+    font-style: normal
+    font-weight: bold
+    font-size: 24px
+    line-height: 30px
+  &__price
+    display: flex
+    justify-content: space-between
+    align-items: center
   &__image
     width: 366px
     height: 500px
@@ -76,6 +98,19 @@
     font-size: 12px
     line-height: 15px
     margin-bottom: 35px
+  &__star
+    margin-right: -3px
+  &__button
+    padding: 10px 26px
+    font-style: normal
+    font-weight: 600
+    font-size: 14px
+    line-height: 19px
+    background-color: $primery
+    color: inherit
+    border: none
+    border-radius: 4px
+    cursor: pointer
 
 .bag
   border-radius: 8px
@@ -100,6 +135,10 @@
     font-weight: bold
     font-size: 24px
     line-height: 30px
+  &__price
+    display: flex
+    justify-content: space-between
+    align-items: center
 
   &__button
     padding: 10px 26px
@@ -112,10 +151,6 @@
     border: none
     border-radius: 4px
     cursor: pointer
-  &__price
-    display: flex
-    justify-content: space-between
-    align-items: center
   &__link
     position: absolute
     top: 26px

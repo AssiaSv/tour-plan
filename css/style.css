@@ -815,6 +815,7 @@ template {
 
 .map__ggl {
   border-radius: 10px;
+  width: 100%;
 }
 
 .packages {
@@ -858,6 +859,45 @@ template {
       grid-column-start: 1;
   -ms-grid-column-span: 2;
       grid-column-end: span 2;
+}
+
+.pack__place {
+  margin-bottom: 11px;
+}
+
+.pack__guests {
+  margin-bottom: 11px;
+}
+
+.pack__icon {
+  margin-right: 14px;
+}
+
+.pack__old-price {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  text-decoration: line-through;
+}
+
+.pack__new-price {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 30px;
+}
+
+.pack__price {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .pack__image {
@@ -931,6 +971,23 @@ template {
   margin-bottom: 35px;
 }
 
+.pack__star {
+  margin-right: -3px;
+}
+
+.pack__button {
+  padding: 10px 26px;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 19px;
+  background-color: #EC1F46;
+  color: inherit;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
 .bag {
   border-radius: 8px;
   overflow: hidden;
@@ -965,6 +1022,18 @@ template {
   line-height: 30px;
 }
 
+.bag__price {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
 .bag__button {
   padding: 10px 26px;
   font-style: normal;
@@ -976,18 +1045,6 @@ template {
   border: none;
   border-radius: 4px;
   cursor: pointer;
-}
-
-.bag__price {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
 }
 
 .bag__link {
