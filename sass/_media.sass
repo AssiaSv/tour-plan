@@ -10,6 +10,20 @@
   .card
     width: 230px
     height: 230px
+  .packages
+    &-wrapper
+      grid-template: 500px 500px/ 300px 300px 300px
+  .bag
+    width: 300px
+  .pack
+    width: 630px
+    &__image
+      width: 315px
+    &__right
+      padding: 47px 21px 30px 40px
+    &__text
+      font-size: 12px
+
 @media (max-width: 992px)
   .container, .newsletter-wrapper
     max-width: 700px
@@ -75,6 +89,19 @@
   .card
     width: 339px
     height: 255px
+  .packages
+    &-wrapper
+      grid-template: 500px 500px 500px/ 340px 340px
+  .bag
+    width: 340px
+  .pack
+    width: 700px
+    &__image
+      width: 340px
+    &__right
+      padding: 47px 21px 30px 44px
+    &__text
+      font-size: 14px
 
 @media (max-width: 768px)
   .container
@@ -148,6 +175,45 @@
   .card
     width: 49%
     height: 255px
+  .packages
+    &-wrapper
+      grid-template: 500px 500px 500px 500px 500px/ 100%
+  .bag
+    width: 100%
+    grid-column-start: 1
+    grid-column-end: 1
+    &__image
+      width: 100%
+    &__link
+      font-weight: 600
+      font-size: 12px
+      line-height: 15px
+      padding: 8px 12px
+  .pack
+    width: 100%
+    display: flex
+    flex-direction: column
+    padding: 0
+    &__right
+      width: 100%
+      padding: 30px 21px 25px 32px
+    &__img
+      width: 100%
+      height: 250px
+    &__image
+      width: 100%
+      height: 100%
+      object-fit: cover
+      object-position: center 25%
+    &__text
+      display: none
+    &__title
+      margin-bottom: 20px
+    &__info
+      margin-bottom: 20px
+
+  .stars
+    display: none
 
 @media (max-width: 576px)
   .container
@@ -199,6 +265,18 @@
       font-size: 18px
       line-height: 23px
       margin-bottom: 36px
+  .packages
+    &-wrapper
+      grid-template: 500px 500px 500px 500px 500px/ 100%
+  .bag
+    width: 100%
+  .pack
+    width: 100%
+
+    &__img
+      width: 100%
+    &__right
+      width: 100%
 @media (max-width: 480px) and (min-width: 320px)
   .container
     width: 85%
@@ -217,3 +295,13 @@
   .newsletter
     &-wrapper
       width: 85%
+
+  .bag
+    width: 100%
+  .pack
+    width: 100%
+
+    &__img
+      width: 100%
+    &__right
+      width: 100%
