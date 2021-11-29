@@ -1555,6 +1555,11 @@ template {
     -ms-grid-columns: 340px 340px;
         grid-template: 500px 500px 500px/ 340px 340px;
   }
+  .packages__title {
+    font-size: 30px;
+    line-height: 38px;
+    margin-bottom: 45px;
+  }
   .bag {
     width: 340px;
   }
@@ -1815,6 +1820,11 @@ template {
     -ms-grid-columns: 100%;
         grid-template: 500px 500px 500px 500px 500px/ 100%;
   }
+  .packages__title {
+    font-size: 18px;
+    line-height: 23px;
+    margin-bottom: 40px;
+  }
   .bag {
     width: 100%;
   }
@@ -1854,8 +1864,14 @@ template {
   .bag {
     width: 100%;
   }
+  .bag__bottom {
+    padding: 30px 15px 25px 20px;
+  }
   .pack {
     width: 100%;
+  }
+  .pack__right {
+    padding: 30px 15px 25px 20px;
   }
   .pack__img {
     width: 100%;
