@@ -1927,6 +1927,7 @@ template {
   .navbar__search--mobile--visible {
     width: 243px;
     margin-left: 0;
+    margin-bottom: 19px;
   }
   .navbar__user {
     -webkit-box-orient: vertical;
@@ -1995,6 +1996,7 @@ template {
     color: #ffffff;
     margin-left: 0;
     margin-top: 10px;
+    margin-bottom: 7px;
   }
   .stars {
     -ms-flex-preferred-size: auto;
