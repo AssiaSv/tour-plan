@@ -1436,9 +1436,8 @@ template {
 .footer-wrapper {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: repeat 4, minmax(min-content, 2fr);
-      grid-template-columns: repeat 4, minmax(-webkit-min-content, 2fr);
-      grid-template-columns: repeat 4, minmax(min-content, 2fr);
+  -ms-grid-columns: 1fr 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-column-gap: 20px;
   grid-row-gap: 30px;
   grid-auto-rows: minmax(40px, -webkit-min-content);
@@ -1447,6 +1446,11 @@ template {
       -ms-flex-align: start;
           align-items: start;
   margin-bottom: 95px;
+}
+
+.footer__legal {
+  -ms-grid-column-align: end;
+      justify-self: end;
 }
 
 .footer__logo {

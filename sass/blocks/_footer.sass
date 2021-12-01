@@ -4,12 +4,14 @@
   padding: 108px 0 46px 0
   &-wrapper
     display: grid
-    grid-template-columns: repeat (4, minmax(min-content, 2fr))
+    grid-template-columns: 1fr 1fr 1fr 1fr
     grid-column-gap: 20px
     grid-row-gap: 30px
     grid-auto-rows: minmax(40px,min-content)
     align-items: start
     margin-bottom: 95px
+  &__legal
+    justify-self: end
   &__logo
     width: 166px
     grid-row: 1/3
