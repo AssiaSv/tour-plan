@@ -1436,11 +1436,11 @@ template {
 .footer-wrapper {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: repeat 4, minmax(min-content, 1fr);
-      grid-template-columns: repeat 4, minmax(-webkit-min-content, 1fr);
-      grid-template-columns: repeat 4, minmax(min-content, 1fr);
-  grid-column-gap: 80px;
-  grid-row-gap: 20px;
+  -ms-grid-columns: repeat 4, minmax(min-content, 2fr);
+      grid-template-columns: repeat 4, minmax(-webkit-min-content, 2fr);
+      grid-template-columns: repeat 4, minmax(min-content, 2fr);
+  grid-column-gap: 20px;
+  grid-row-gap: 30px;
   grid-auto-rows: minmax(40px, -webkit-min-content);
   grid-auto-rows: minmax(40px, min-content);
   -webkit-box-align: start;
@@ -1457,6 +1457,11 @@ template {
   -ms-flex-item-align: stretch;
       -ms-grid-row-align: stretch;
       align-self: stretch;
+}
+
+.footer__logo-img {
+  width: 100%;
+  height: 100%;
 }
 
 .footer__categories {
@@ -1714,6 +1719,9 @@ template {
   .footer__input {
     -ms-flex-preferred-size: 100%;
         flex-basis: 100%;
+  }
+  .footer-wrapper {
+    grid-column-gap: 55px;
   }
 }
 
