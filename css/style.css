@@ -1948,6 +1948,7 @@ template {
     right: 0;
     top: 78px;
     bottom: 0;
+    overflow: auto;
   }
   .navbar-menu {
     -webkit-box-orient: vertical;
@@ -1958,7 +1959,7 @@ template {
         -ms-flex-align: center;
             align-items: center;
     padding-top: 31px;
-    padding-bottom: 68px;
+    padding-bottom: 48px;
   }
   .navbar-menu__item {
     margin-bottom: 20px;
