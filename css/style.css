@@ -1176,7 +1176,7 @@ template {
   font-weight: 300;
   font-size: 14px;
   line-height: 18px;
-  color: #BDBDBD;
+  color: #0A223D;
 }
 
 .subscribe__button {
@@ -1614,7 +1614,7 @@ template {
 
 .footer__message {
   background-color: #ffffff;
-  color: #BDBDBD;
+  color: #0A223D;
   border: none;
   border-radius: 4px;
   -ms-flex-preferred-size: 100%;
