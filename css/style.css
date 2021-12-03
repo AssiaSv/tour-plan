@@ -778,6 +778,7 @@ template {
   border-radius: 4px;
   border: none;
   color: #ffffff;
+  outline: none;
   cursor: pointer;
 }
 
