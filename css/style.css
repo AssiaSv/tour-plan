@@ -1747,7 +1747,7 @@ template {
   border-radius: 8px;
   color: #ffffff;
   z-index: 110;
-  width: 478px;
+  max-width: 478px;
   visibility: hidden;
   opacity: 0;
   -webkit-transition: opacity 0.2s;
@@ -1762,6 +1762,7 @@ template {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  overflow: auto;
 }
 
 .modal__dialog--visible {
@@ -1795,7 +1796,7 @@ template {
   border-radius: 4px;
   padding: 18px 23px;
   margin-bottom: 15px;
-  width: 302px;
+  width: 100%;
   min-height: 50px;
   font-style: normal;
   font-weight: normal;
@@ -1816,7 +1817,7 @@ template {
   font-weight: normal;
   font-size: 12px;
   line-height: 15px;
-  width: 302px;
+  width: 100%;
   min-height: 123px;
   outline: none;
 }
@@ -2065,6 +2066,9 @@ template {
   .footer__input {
     -ms-flex-preferred-size: 47%;
         flex-basis: 47%;
+  }
+  .modal__dialog {
+    padding: 33px 68px;
   }
 }
 
@@ -2382,7 +2386,7 @@ template {
   }
   .modal__dialog {
     width: 400px;
-    padding: 33px 50px;
+    padding: 33px 45px;
   }
 }
 
@@ -2563,6 +2567,17 @@ template {
   .modal__button {
     width: 100px;
     padding: 10px 12px;
+  }
+}
+
+@media (max-height: 480px) {
+  .modal__dialog--visible {
+    height: 95%;
+  }
+  .modal__container {
+    height: 429px;
+    width: 100%;
+    overflow-y: auto;
   }
 }
 /*# sourceMappingURL=style.css.map */

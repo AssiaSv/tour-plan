@@ -354,7 +354,9 @@
               <span class="pack__old-price">$ 10,500</span>
               <div class="pack__price">
                 <span class="pack__new-price">$ 8,500</span>
-                <button class="pack__button">Book Now</button>
+                <button data-toggle="modal" class="pack__button">
+                  Book Now
+                </button>
               </div>
               <!-- /.bag__price -->
             </div>
@@ -396,7 +398,9 @@
               <span class="bag__old-price">$ 8,500</span>
               <div class="bag__price">
                 <span class="bag__new-price">$ 3,000</span>
-                <button class="bag__button">Book Now</button>
+                <button data-toggle="modal" class="bag__button">
+                  Book Now
+                </button>
               </div>
               <!-- /.bag__price -->
             </div>
@@ -435,7 +439,9 @@
               <span class="bag__old-price">$ 10,500</span>
               <div class="bag__price">
                 <span class="bag__new-price">$ 9,500</span>
-                <button class="bag__button">Book Now</button>
+                <button data-toggle="modal" class="bag__button">
+                  Book Now
+                </button>
               </div>
               <!-- /.bag__price -->
             </div>
@@ -474,7 +480,9 @@
               <span class="bag__old-price">$ 4,500</span>
               <div class="bag__price">
                 <span class="bag__new-price">$ 2,500</span>
-                <button class="bag__button">Book Now</button>
+                <button data-toggle="modal" class="bag__button">
+                  Book Now
+                </button>
               </div>
               <!-- /.bag__price -->
             </div>
@@ -513,7 +521,9 @@
               <span class="bag__old-price">$ 6,500</span>
               <div class="bag__price">
                 <span class="bag__new-price">$ 3,500</span>
-                <button class="bag__button">Book Now</button>
+                <button data-toggle="modal" class="bag__button">
+                  Book Now
+                </button>
               </div>
               <!-- /.bag__price -->
             </div>
@@ -751,7 +761,7 @@
               The curious corner <br />
               of&nbsp;chamarel
             </h3>
-            <button class="card__button">Book Now</button>
+            <button data-toggle="modal" class="card__button">Book Now</button>
           </div>
           <!-- /.card -->
           <div class="card activities__card">
@@ -761,7 +771,7 @@
               class="card__image"
             />
             <h3 class="card__title">Gymkhana club golf <br />course</h3>
-            <button class="card__button">Book Now</button>
+            <button data-toggle="modal" class="card__button">Book Now</button>
           </div>
           <!-- /.card -->
           <div class="card activities__card">
@@ -773,7 +783,7 @@
             <h3 class="card__title">
               Tamarind falls hiking <br />trip&nbsp;-&nbsp;full day
             </h3>
-            <button class="card__button">Book Now</button>
+            <button data-toggle="modal" class="card__button">Book Now</button>
           </div>
           <!-- /.card -->
           <div class="card activities__card">
@@ -783,7 +793,7 @@
               class="card__image"
             />
             <h3 class="card__title">The blue marine discovery <br />quest</h3>
-            <button class="card__button">Book Now</button>
+            <button data-toggle="modal" class="card__button">Book Now</button>
           </div>
           <!-- /.card -->
         </div>
@@ -1002,39 +1012,42 @@
       <div class="modal__overlay"></div>
       <!-- /.modal__overlay -->
       <div class="modal__dialog">
-        <a href="#" class="modal__close">
-          <img src="img/close.svg" alt="icon: close" />
-        </a>
-        <h3 class="modal__title modal__title--mb-3">Booking</h3>
-        <form action="send.php" method="POST" class="modal__form">
-          <input
-            type="text"
-            class="input modal__input"
-            placeholder="Your Full Name*"
-            name="name"
-          />
-          <input
-            type="text"
-            class="input modal__input"
-            placeholder="Phone Number*"
-            name="phone"
-          />
-          <input
-            type="text"
-            class="input modal__input"
-            placeholder="Email*"
-            name="email"
-          />
-          <textarea
-            class="modal__message"
-            placeholder="Message"
-            name="message"
-          ></textarea>
-          <div class="modal__bottom">
-            <button class="button modal__button">Send</button>
-            <span class="modal__info">* Required Fields</span>
-          </div>
-        </form>
+        <div class="modal__container">
+          <a href="#" class="modal__close">
+            <img src="img/close.svg" alt="icon: close" />
+          </a>
+          <h3 class="modal__title modal__title--mb-3">Booking</h3>
+          <form action="send.php" method="POST" class="modal__form">
+            <input
+              type="text"
+              class="input modal__input"
+              placeholder="Your Full Name*"
+              name="name"
+            />
+            <input
+              type="text"
+              class="input modal__input"
+              placeholder="Phone Number*"
+              name="phone"
+            />
+            <input
+              type="text"
+              class="input modal__input"
+              placeholder="Email*"
+              name="email"
+            />
+            <textarea
+              class="modal__message"
+              placeholder="Message"
+              name="message"
+            ></textarea>
+            <div class="modal__bottom">
+              <button class="button modal__button">Send</button>
+              <span class="modal__info">* Required Fields</span>
+            </div>
+          </form>
+        </div>
+        <!-- /.madal__container -->
       </div>
       <!-- /.madal__dialog -->
     </div>
