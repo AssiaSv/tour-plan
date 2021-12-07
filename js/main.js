@@ -75,5 +75,26 @@ function closeModal(event) {
       modalDialog.removeClass("modal__dialog--visible");
     }
   });
-
+  // обработка форм
+  $('.form').each(function(){
+    $(this).validate({
+    errorClass: "invalid",
+    messages: {
+      name: {
+        required: "Please specify your name",
+        minlength: "The name must be at least 2 letters long",
+      },
+      email: {
+        required: "Please specify your emai",
+        email: "name@domain.com"
+      },
+      phone: {
+        required: "Please specify your phone number",
+        phone: "Phone number format: +7-(999)-999-99-99",
+        minlength: "Please enter at least 11 characters.",
+        },
+      },
+    });
+  });
+  $(".phone").mask("+7(999) 999-99-99");
 });
