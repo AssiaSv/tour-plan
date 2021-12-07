@@ -503,11 +503,13 @@ template {
 .breadcrumb-list__item {
   font-size: 10px;
   line-height: 13px;
+  word-break: break-word;
 }
 
 .breadcrumb-list__item:not(:last-child)::after {
   content: '/';
   margin-right: 4px;
+  word-break: break-word;
 }
 
 .breadcrumb-list__link {
@@ -1400,9 +1402,6 @@ template {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: end;
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
@@ -1445,7 +1444,7 @@ template {
   line-height: 20px;
   color: #ffffff;
   margin-bottom: 18px;
-  margin-top: 0;
+  margin-top: auto;
   z-index: 5;
 }
 
