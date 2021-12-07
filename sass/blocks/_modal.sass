@@ -25,20 +25,15 @@
     color: $light
     z-index: 110
     max-width: 478px
-
+    max-height: 95%
     visibility: hidden
     opacity: 0
     transition: opacity 0.2s
-    display: flex
-    flex-direction: column
-    justify-content: center
-
-    overflow: auto
-
+    overflow-y: auto
     &--visible
       visibility: visible
       opacity: 1
-
+      overflow-y: auto
   &__close
     position: absolute
     top: 17px
