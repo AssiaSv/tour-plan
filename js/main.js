@@ -86,7 +86,7 @@ function closeModal(event) {
       },
       email: {
         required: "Please specify your emai",
-        email: "name@domain.com"
+        email: "Email address format: name@domain.com"
       },
       phone: {
         required: "Please specify your phone number",
