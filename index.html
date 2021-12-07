@@ -11,6 +11,7 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="css/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="css/aos.css" />
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
@@ -536,7 +537,11 @@
     </section>
     <!-- /.packages -->
     <section class="newsletter">
-      <div class="newsletter-wrapper">
+      <div
+        class="newsletter-wrapper"
+        data-aos="fade-right"
+        data-aos-delay="100"
+      >
         <h2 class="newsletter-title newsletter__title">
           subscribe to our
           <span class="newsletter-title__strong">Newsletter</span>
@@ -545,6 +550,8 @@
           action="send.php"
           method="POST"
           class="subscribe newsletter__subscribe form"
+          data-aos="fade-right"
+          data-aos-delay="300"
         >
           <input
             type="email"
@@ -566,7 +573,7 @@
         <!-- слайдер -->
         <div class="swiper reviews-slider">
           <div class="swiper-wrapper">
-            <div class="swiper-slide">
+            <div class="swiper-slide" data-aos="flip-left">
               <div class="reviews-slider__item">
                 <div class="reviews-slider__profile">
                   <img
@@ -621,7 +628,7 @@
               <!-- /.reviews-slider__item -->
             </div>
             <!-- /.swiper-slide -->
-            <div class="swiper-slide">
+            <div class="swiper-slide" data-aos="flip-left">
               <div class="reviews-slider__item">
                 <div class="reviews-slider__profile">
                   <img
@@ -676,7 +683,7 @@
               <!-- /.reviews-slider__item -->
             </div>
             <!-- /.swiper-slide -->
-            <div class="swiper-slide">
+            <div class="swiper-slide" data-aos="flip-left">
               <div class="reviews-slider__item">
                 <div class="reviews-slider__profile">
                   <img
@@ -752,7 +759,11 @@
       <div class="container">
         <h2 class="activities__title">Other Activities</h2>
         <div class="activities-wrapper">
-          <div class="card activities__card">
+          <div
+            class="card activities__card"
+            data-aos="fade-up"
+            data-aos-delay="100"
+          >
             <img
               src="img/activity-1.jpg"
               alt="The curious corner of chamarel"
@@ -765,7 +776,11 @@
             <button data-toggle="modal" class="card__button">Book Now</button>
           </div>
           <!-- /.card -->
-          <div class="card activities__card">
+          <div
+            class="card activities__card"
+            data-aos="fade-up"
+            data-aos-delay="300"
+          >
             <img
               src="img/activity-2.jpg"
               alt="Gymkhana club golf course"
@@ -775,7 +790,11 @@
             <button data-toggle="modal" class="card__button">Book Now</button>
           </div>
           <!-- /.card -->
-          <div class="card activities__card">
+          <div
+            class="card activities__card"
+            data-aos="fade-up"
+            data-aos-delay="500"
+          >
             <img
               src="img/activity-3.jpg"
               alt="Tamarind falls hiking trip - full day"
@@ -787,7 +806,11 @@
             <button data-toggle="modal" class="card__button">Book Now</button>
           </div>
           <!-- /.card -->
-          <div class="card activities__card">
+          <div
+            class="card activities__card"
+            data-aos="fade-up"
+            data-aos-delay="700"
+          >
             <img
               src="img/activity-4.jpg"
               alt="The blue marine discovery quest"
@@ -979,7 +1002,7 @@
                     placeholder="Phone Number*"
                     name="phone"
                     required
-                    minlength="11"
+                    minlength="17"
                   />
                 </div>
               </div>
@@ -1043,7 +1066,7 @@
               placeholder="Phone Number*"
               name="phone"
               required
-              minlength="11"
+              minlength="17"
             />
             <input
               type="email"
@@ -1073,6 +1096,7 @@
     <script src="js/swiper-bundle.min.js"></script>
     <script src="js/jquery.validate.min.js"></script>
     <script src="js/jquery.mask.min.js"></script>
+    <script src="js/aos.js"></script>
     <script src="js/main.js"></script>
   </body>
 </html>
