@@ -1021,6 +1021,7 @@ template {
   border: none;
   border-radius: 4px;
   cursor: pointer;
+  outline: none;
 }
 
 .bag {
@@ -1080,6 +1081,7 @@ template {
   border: none;
   border-radius: 4px;
   cursor: pointer;
+  outline: none;
 }
 
 .bag__link {
@@ -1447,6 +1449,7 @@ template {
 }
 
 .card__button {
+  outline: none;
   font-style: normal;
   font-weight: 600;
   font-size: 12px;
