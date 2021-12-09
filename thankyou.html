@@ -257,7 +257,7 @@
           </div>
           <!-- /.footer__list -->
           <div class="footer__contact-details">
-            <h3 class="footer__title footer__title--mb-3">Contact details</h3>
+            <h3 class="footer__title footer__title--mb-4">Contact details</h3>
             <p class="footer__text">
               Feel free to contact us by phone, email or by our contact form
             </p>
@@ -283,18 +283,21 @@
                 </div>
                 <div class="footer__tel">
                   Tel (business hours) :
-                  <a href="tel:2691500" class="footer__link">269 1500</a>
+                  <a href="tel:2691500" class="footer__link"
+                    > 269 1500</a
+                  >
                   <br />Tel (hotline) Monday - Saturday:
                   <a href="tel:52-56-61-38" class="footer__link"
-                    >52&#8209;56&#8209;61&#8209;38</a
-                  >
-                  (08:00&nbsp;am &#8209; 20:00&nbsp;pm)<br />Tel (hotline)
-                  Sunday:
+                    >
+                    52&#8209;56&#8209;61&#8209;38 </a
+                  >(08:00&nbsp;am &#8209;
+                    20:00&nbsp;pm)
+                  <br />Tel (hotline) Sunday: 
                   <a href="tel:52-56-61-38" class="footer__link"
-                    >52&#8209;56&#8209;61&#8209;38</a
-                  >
-                  (08:00&nbsp;am – 14:00&nbsp;pm)
-                </div>
+                    >52&#8209;56&#8209;61&#8209;38
+                    </a
+                  >(08:00&nbsp;am – 14:00&nbsp;pm)
+                <!-- </div> -->
               </li>
               <li class="footer__item footer__item--mb-2">
                 <div class="footer__icon-wrapper">
@@ -313,19 +316,29 @@
           <!-- /.footer__contact-details -->
           <div class="footer__contact-form">
             <h3 class="footer__title footer__title--mb-3">Send us a message</h3>
-            <form action="send.php" method="POST" class="footer__form">
-              <input
-                type="text"
-                class="input footer__input"
-                placeholder="Your Full Name*"
-                name="name"
-              />
-              <input
-                type="text"
-                class="input footer__input"
-                placeholder="Phone Number*"
-                name="phone"
-              />
+            <form action="send.php" method="POST" class="footer__form form">
+              <div class="footer__input-wrapper">
+                <div class="footer__input-group">
+                  <input
+                    type="text"
+                    class="input footer__input"
+                    placeholder="Your Full Name*"
+                    name="name"
+                    required
+                    minlength="2"
+                  />
+                </div>
+                <div class="footer__input-group">
+                  <input
+                    type="tel"
+                    class="input footer__input phone"
+                    placeholder="Phone Number*"
+                    name="phone"
+                    required
+                    minlength="17"
+                  />
+                </div>
+              </div>
               <textarea
                 class="footer__message"
                 placeholder="Message"
@@ -365,6 +378,9 @@
     <script src="js/jquery-3.6.0.min.js"></script>
     <script src="js/parallax.min.js"></script>
     <script src="js/swiper-bundle.min.js"></script>
+    <script src="js/jquery.validate.min.js"></script>
+    <script src="js/jquery.mask.min.js"></script>
+    <script src="js/aos.js"></script>
     <script src="js/main.js"></script>
   </body>
 </html>
