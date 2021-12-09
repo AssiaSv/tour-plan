@@ -595,12 +595,17 @@
     &__button
       width: 100px
       padding: 10px 12px
-// @media (max-height: 480px)
-//   .modal
-//     &__dialog
-//       &--visible
-//         height: 95%
-//     &__container
-//       height: 429px
-//       width: 100%
-//       overflow-y: auto
+@media (min-width: 993px)
+  .card, .footer, .subscribe, .pack, .booking, .search, .bag
+    &__button
+      &:hover
+        background: #d22847
+  .footer
+    &__item
+      &:hover
+        text-decoration: underline
+  .navbar
+    &-menu
+      &__item
+        &:hover
+          text-decoration: underline
